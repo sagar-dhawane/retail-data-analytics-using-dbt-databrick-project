@@ -1,2 +1,2 @@
 SELECT *
-FROM dbt_project_catalog.retail_schema.orders
+FROM {{source('retail_source','orders')}}

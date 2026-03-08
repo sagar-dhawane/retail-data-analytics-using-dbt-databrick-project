@@ -1,0 +1,9 @@
+sources:
+  - name: retail_source
+    database: dbt_project_catalog  
+    schema: retail_schema
+    tables:
+      - name: orders
+      - name: reviews
+      - name: products
+      - name: users
