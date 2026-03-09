@@ -1,9 +1,18 @@
 sources:
   - name: retail_source
-    database: dbt_project_catalog  
+    database: dbt_project_catalog
     schema: retail_schema
     tables:
       - name: orders
+        config:
+          loaded_at_field: created_at
+          freshness:
+            warn_after:
+              count: 365
+              period: day
+
       - name: reviews
+
       - name: products
+
       - name: users
