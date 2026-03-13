@@ -1,4 +1,6 @@
-Welcome to your new dbt project!
+Welcome to Retail Data Analytics Project!
+- Data Transformation done in layers using Medallion Architecture
+- Managed Properties and Configurations with dbt_project.yml, properties.yml and config block directly added in model itself.
 
 ### Using the starter project
 
