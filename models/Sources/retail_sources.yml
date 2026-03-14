@@ -10,6 +10,21 @@ sources:
             warn_after:
               count: 365
               period: day
+        # Generic Testings
+        columns:
+          - name: id
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+              - unique:
+                  config:
+                    severity: warn
+          - name: product_id
+            data_tests:
+              - unique: 
+                  config:
+                    severity: warn
 
       - name: reviews
 
