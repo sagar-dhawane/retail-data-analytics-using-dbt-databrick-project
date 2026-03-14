@@ -20,14 +20,38 @@ sources:
               - unique:
                   config:
                     severity: warn
-          - name: product_id
+
+      - name: reviews
+        columns:
+          - name: id
             data_tests:
-              - unique: 
+              - not_null:
+                  config:
+                    severity: warn
+              - unique:
                   config:
                     severity: warn
 
-      - name: reviews
 
       - name: products
+        columns:
+          - name: id
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+              - unique:
+                  config:
+                    severity: warn
 
       - name: users
+        columns:
+          - name: id
+            data_tests:
+              - not_null:
+                  config:
+                    severity: warn
+              - unique:
+                  config:
+                    severity: warn
+
