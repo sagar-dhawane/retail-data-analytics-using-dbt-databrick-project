@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: bronze_products
+    columns:
+      - name: category
+        data_tests:
+        - accepted_values:
+            arguments:
+              values: ["Gadget", "Gizmo", "Doohickey"]
+            config: 
+              severity: warn
+              store_failures: true
+              limit: 100
