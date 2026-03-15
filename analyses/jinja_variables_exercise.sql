@@ -8,7 +8,7 @@ select '{{ var1 }}' as message
 #}
 
 {# 2nd Way #}
-{% set var2%}
+{%- set var2 -%}
     'I am agentic engineer'
-{% endset %}
-select {{var2}} as message
+{%- endset -%}
+{{var2}}
