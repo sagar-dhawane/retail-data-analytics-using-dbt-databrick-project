@@ -10,4 +10,3 @@
 {% for i in columns %}
 {{ i.name ~ " & "~ i.dtype}}
 {%endfor%}
-
