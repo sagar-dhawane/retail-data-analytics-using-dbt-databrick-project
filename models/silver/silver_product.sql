@@ -7,4 +7,4 @@ ean,
 vendor,
 price
 from
-{{ref('bronze_products')}}
+{{ref('products_snapshot')}}

@@ -1,0 +1,9 @@
+snapshots:
+  - name: products_snapshot
+    relation: source('retail_source', 'products')
+    config:
+      schema: bronze
+      database: dbt_project_catalog
+      unique_key: id
+      strategy: timestamp
+      updated_at: created_at
